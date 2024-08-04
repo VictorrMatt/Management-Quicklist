@@ -9,7 +9,7 @@ function addItem() {
   const inputValue = document.getElementById("input-value");
   const contentContainer = document.getElementById("content-container");
 
-  if (inputValue != "") {
+  if (inputValue.value != "") {
     const newChild = document.createElement("div");
     newChild.className = "content-item flex";
     newChild.innerHTML = `<p class="paragraph">${inputValue.value}</p>${trashSvg}`;
