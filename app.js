@@ -6,15 +6,16 @@ function addItem() {
 <path d="M9.66663 11.5V7.5" stroke="#6B6671" stroke-linecap="round"/>
 </svg>
 `;
-  const inputValue = document.getElementById("input-value").value;
+  const inputValue = document.getElementById("input-value");
   const contentContainer = document.getElementById("content-container");
 
   if (inputValue != "") {
     const newChild = document.createElement("div");
     newChild.className = "content-item flex";
-    newChild.innerHTML = `<p class="paragraph">${inputValue}</p>${trashSvg}`;
+    newChild.innerHTML = `<p class="paragraph">${inputValue.value}</p>${trashSvg}`;
 
     contentContainer.appendChild(newChild);
+    inputValue.value = "";
   }
 }
 

@@ -125,6 +125,7 @@ main {
   background-color: var(--color-brand);
   color: var(--always-white);
   width: 160px;
+  cursor: pointer;
 }
 
 #add-item input[type="button"]:hover {
